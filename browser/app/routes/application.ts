@@ -6,8 +6,4 @@ import SessionService from 'browser/services/session';
 export default class ApplicationRoute extends Route {
   @service declare session: SessionService;
   @service declare router: Router;
-
-  beforeModel() {
-    this.router.transitionTo('dashboard');
-  }
 }

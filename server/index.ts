@@ -85,7 +85,7 @@ fastify.post("/login", async (request, reply) => {
         challenge: body.nounce,
         origin: "http://localhost:4200",
         userVerified: false,
-        counter: 0
+        counter: 1
     });
     
     reply.send({ accessToken: generateAccessToken(user.username) });
